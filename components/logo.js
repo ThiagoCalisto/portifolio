@@ -20,19 +20,21 @@ padding: 10px;
 const Logo = () => {
   const PrintImg = '/images/korok-transpa.png'
 
-  return(
-    <Link href="/">
+  return (
+    <Link legacyBehavior  href="/" >
+    <a>
       <LogoBox>
-      <Image src={PrintImg} width={20} height={20} alt="logo" />
-      <Text
-      color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      fontFamily="M PLUS Rounded 1c"
-      fontWeight="bold"
-      ml={3}
-      >
-      Thiago Calisto
-      </Text>
+        <Image src={PrintImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily="M PLUS Rounded 1c"
+          fontWeight="bold"
+          ml={3}
+        >
+          Thiago Calisto
+        </Text>
       </LogoBox>
+    </a>
     </Link>
   )
 
