@@ -1,5 +1,8 @@
-import { Container, Box, Heading, Image } from '@chakra-ui/react'
+import { Container, Box, Heading, Image, Button } from '@chakra-ui/react'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import NextLink from 'next/link'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const Page = () => {
   return (
@@ -23,7 +26,26 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Trabalho
         </Heading>
-        <p>Paragrafo</p>
+        <Paragraph>          Sou um desenvolvedor fullstack com experiência na área de desenvolvimento de
+          software e um amplo conhecimento em várias linguagens, incluindo JavaScript, TypeScript,
+          Rust, PHP e Python. Também acumulei experiência valiosa na interação com clientes de
+          extrema importância para a empresa, participando de Provas de Conceito (PoC),
+          inclusive obtendo sucesso em uma delas. Sou reconhecido pela minha comunicação
+          eficaz e pela minha habilidade de trabalhar em equipe, e, quando necessário, consigo assumir
+          funções de gestão de equipe.</Paragraph>
+        <Paragraph>          Além disso, sou aluno do curso de Ciência da Computação com foco na licenciatura e tenho
+          um forte interesse na área de desenvolvimento de sistemas web e mobile. Meu objetivo é aplicar
+          e aprimorar meus conhecimentos em prol da instituição empregadora, visando o crescimento
+          profissional. Estou ansioso para continuar contribuindo com minha experiência e habilidades,
+          enquanto a empresa me fornece os recursos tecnológicos e humanos necessários para alcançar
+          meu potencial máximo.</Paragraph>
+         <Box align="center" my={4}>
+         <NextLink legacyBehavior href="/works">
+         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" >
+         Meu Portifolio
+         </Button>
+         </NextLink>
+         </Box> 
       </Section>
     </Container>
   )
